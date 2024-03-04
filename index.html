@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="qrGeneratorApp">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <title>QR Code Generator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="qrcode.min.js"></script> <!-- Include QR Code library -->
+    <script src="app.js"></script> <!-- AngularJS application script -->
+</head>
+<body ng-controller="QRGeneratorController">
+    <h1>QR Code Generator</h1>
+    <input type="text" ng-model="qrData" placeholder="Enter data">
+    <button ng-click="generateQRCode()">Generate QR Code</button>
+    <div id="qrcode"></div>
+    <footer> 
+      <p>Made with &hearts; by Karthik</p>
+    </footer>
+</body>
+</html>
